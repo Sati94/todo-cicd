@@ -1,5 +1,5 @@
 export function format(todo) {
-  return `${todo.id} - [${todo.done ? '✅': ' '}] ${todo.title}`;
+  return `${todo.id} - [${todo.done ? 'x' : ' '}] ${todo.title}`;
 }
 
 export function formatList(todos) {
@@ -16,7 +16,7 @@ function nextId(todos) {
 }
 
 export function list(store) {
-  return store.get(); 
+  return store.get();
 }
 
 export function add(store, params) {
